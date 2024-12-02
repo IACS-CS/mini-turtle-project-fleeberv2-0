@@ -7,6 +7,11 @@ export const runDemo = async (turtle, ti) => {
   };
 
   const drawColonFollowedByThree = async (size) => {
+    await turtle.penUp();
+    await turtle.right(90);
+    await turtle.forward(200);
+    await turtle.left(90);
+    await turtle.penDown();
     await turtle.left(180);
     await turtle.arc(100, 180, false);
     await turtle.left(180);
