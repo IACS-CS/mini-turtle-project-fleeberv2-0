@@ -7,6 +7,7 @@ export const runDemo = async (turtle, ti) => {
   };
 
   const drawColonFollowedByThree = async (size) => {
+    // Done by R. Mamet
     await turtle.penUp();
     await turtle.right(90);
     await turtle.forward(20 * size);
@@ -39,6 +40,7 @@ export const runDemo = async (turtle, ti) => {
   };
 
   const drawBag = async (size) => {
+    // Done by X. Enos
     await turtle.penUp();
     await turtle.setLineWidth(3);
     await turtle.right(90);
@@ -68,8 +70,10 @@ export const runDemo = async (turtle, ti) => {
   };
 
   const makeZigZag = async (size) => {
-    // Distance found using pythagoras:
-    // We know distance from top-left to top-right it 80
+    // Done by R. Mamet
+    
+    // Distance found using Pythagoras:
+    // We know the distance from top-left to top-right is 80
     // 80/12 to find one triangle
     // It's all 45 degrees, so Math.sqrt((20/3)**2 + (20/3)**2)
     // Simplify it out:
