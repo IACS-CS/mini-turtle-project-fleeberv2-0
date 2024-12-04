@@ -9,15 +9,15 @@ const textDiv = document.querySelector("#app");
 // Initialize turtle and text interface objects
 const turtle = new RealTurtle(canvas, {
   /* set async to false if you will do all
-  * of your drawing at once. If so, you don't have
-  * to "await" at the end of each turtle command,
-  * but you *will* have to add a turtle.start()
-  * call at the end. */
+   * of your drawing at once. If so, you don't have
+   * to "await" at the end of each turtle command,
+   * but you *will* have to add a turtle.start()
+   * call at the end. */
   async: true,
   autoStart: false,
 });
 
-const ti = new TextInterface(textDiv, "My Drawing Program");
+const ti = new TextInterface(textDiv, "Draw a paper bag!");
 
 /* Comment out the line below once you're writing
  * your own code -- you can also take a look at the
