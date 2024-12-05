@@ -87,6 +87,7 @@ export const runDemo = async (turtle, ti) => {
   let keepDrawing = true;
 
   while (keepDrawing) {
+    await turtle.setFillStyle("white");
     await turtle.setSpeed(0.5);
     await turtle.setSpeed(await ti.promptNumber("How fast should I draw? 0 to 1 (anything above 1 = 1)"))
     let size = await ti.promptNumber(
