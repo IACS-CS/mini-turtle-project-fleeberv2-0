@@ -88,6 +88,7 @@ export const runDemo = async (turtle, ti) => {
 
   while (keepDrawing) {
     await turtle.setSpeed(0.5);
+    await turtle.setSpeed(await ti.promptNumber("How fast should I draw? 0 to 1 (anything above 1 = 1)"))
     let size = await ti.promptNumber(
       "How big should I draw the bag? (type 0 to end)"
     );
